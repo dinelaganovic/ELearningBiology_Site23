@@ -70,6 +70,8 @@
 
 </body>
 <script src="js/app.js"></script>
-<script src="JS/loginValidation.js?newversion"></script>
+<script src="JS/loginValidation.js">
+
+</script>
 <script src="https://momentjs.com/downloads/moment.js"></script>
 </html>
