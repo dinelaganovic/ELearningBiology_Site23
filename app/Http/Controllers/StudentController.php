@@ -82,7 +82,7 @@ class StudentController extends Controller
             if(isset($data['question'.$i]))
             {
                 $question=Question::where('id', $data['question'.$i])->get()->first();
-                if($question->odgovor===$data['ans'.$i])
+                if(strpos($question->odgovor,$data['ans'.$i])!=="")
                 {
                     $result[$data['question'.$i]]='YES';
                     $yes_ans++;
